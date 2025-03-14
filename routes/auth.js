@@ -13,7 +13,7 @@ const app = express.Router();
 const URL = process.env.DB || "mongodb://127.0.0.1:27017";
 mongoose.connect(URL);
 
-const { User } = require("./models/users");
+const { User } = require("../models/user");
 
 app.use(express.json());
 

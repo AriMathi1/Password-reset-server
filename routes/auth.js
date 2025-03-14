@@ -16,7 +16,6 @@ mongoose.connect(URL);
 const { User } = require("./models/users");
 
 app.use(express.json());
-app.use(cors({ origin: "*", }));
 
 function authorizer(req, res, next) {
     try {

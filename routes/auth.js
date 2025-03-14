@@ -6,7 +6,7 @@ const jwt = require("jsonwebtoken");
 const bcryptjs = require("bcryptjs");
 const MongoClient = mongodb.MongoClient;
 require("dotenv").config();
-const { sendResetEmail, generateResetToken } = require("./utils/email");
+const { sendResetEmail, generateResetToken } = require("../utils/email");
 
 const app = express.Router();
 
